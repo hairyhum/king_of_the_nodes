@@ -1,0 +1,22 @@
+{application, king,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { king_app, []}},
+  {env, [
+    {timeout, 2000},
+    {nodes, [
+      {1, 'king_node1@127.0.0.1'},
+      {2, 'king_node2@127.0.0.1'},
+      {3, 'king_node3@127.0.0.1'},
+      {4, 'king_node4@127.0.0.1'},
+      {5, 'king_node5@127.0.0.1'},
+      {6, 'king_node6@127.0.0.1'}
+      ]}
+  ]}
+ ]}.
